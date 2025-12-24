@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Battery Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>🔋 OnSpote Energy</h1>
+      <p>Battery Monitering System</p>
+    </header>
+
+    <section class="cards">
+      <div class="card"><h3>Voltage</h3><p id="voltage">-- V</p></div>
+      <div class="card"><h3>Current</h3><p id="current">-- A</p></div>
+      <div class="card"><h3>Power</h3><p id="power">-- W</p></div>
+      <div class="card"><h3>Temperature</h3><p id="temperature">-- °C</p></div>
+    </section>
+
+    <section class="battery-section">
+      <div class="battery">
+        <div id="battery-fill"></div>
+      </div>
+      <span id="battery-text">-- %</span>
+      <span id="health-badge" class="badge">Health</span>
+    </section>
+
+    <section class="chart-box">
+      <canvas id="voltageChart"></canvas>
+    </section>
+
+    <footer>
+      <p>Powered by ESP32 + Firebase</p>
+    </footer>
+
+  </div>
+
+  <!-- Firebase Logic -->
+  <script type="module" src="/js/firebase.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #020617, #1e293b);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.card p {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.battery-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.battery {
+  width: 260px;
+  height: 40px;
+  border: 3px solid #38bdf8;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#battery-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.5s;
+}
+
+#battery-text {
+  display: block;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.good {
+  background: #22c55e;
+  color: #020617;
+}
+
+.low {
+  background: #ef4444;
+  color: white;
+}
+
+.chart-box {
+  background: #020617;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #64748b;
+}
